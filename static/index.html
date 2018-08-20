@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Read Server CPU and Memory Usage</title>
+    <link href="style/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div>
+        <h1>App Uptime</h1>
+        <p>App has been up for:
+            <span id="uptime2">0</span>
+        </p>
+        <p>Please wait until one minute, five minutes, 15 minutes are done to display server's cpu load respectively.</p>
+    </div>
+    <div id="cpu_container">
+        <h1 class="titles" id="cpu_title">CPU Usage</h1>
+        <p id="cur">Current:
+            <span id="cur2">0</span>
+        </p>
+        <p id="one">Past One Minute:
+            <span id="one2">0</span>
+        </p>
+        <p id="five">Past Five Minutes:
+            <span id="five2">0</span>
+        </p>
+        <p id="fifteen">Past Fifteen Minutes:
+            <span id="fifteen2">0</span>
+        </p>
+    </div>
+    <div class="titles" id="mem_container">
+        <h1 id="mem_title">Memory Usage</h1>
+        <p id="mem">Current Memory Usage:
+            <span id="mem2">0</span>
+        </p>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
